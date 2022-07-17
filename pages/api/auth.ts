@@ -18,7 +18,7 @@ export default async function handler(req:any, res:any) {
             if (token) {
                 res.status(200).json(token);
             } else {
-                res.status(400).json({ msg: data.message });
+                res.status(400).json({ msg: { ...data.message, app_id: process.env.APP_ID, app_secret: process.env.APP_SECRET } });
             }
         } catch (error) {
             if (typeof error === 'string') {
