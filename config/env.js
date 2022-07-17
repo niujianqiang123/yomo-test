@@ -77,6 +77,8 @@ function getClientEnvironment(publicUrl) {
         // This should only be used as an escape hatch. Normally you would put
         // images into the `src` and `import` them in code to get their paths.
         PUBLIC_URL: publicUrl,
+        APP_ID: 'FisTqBFptOWePVM',
+        APP_SECRET: 'vrJhIjQZLLRnufzVIbxjMIMvosaoJa',
         // SKIP_PREFLIGHT_CHECK: true,
         // We support configuring the sockjs pathname during development.
         // These settings let a developer run multiple simultaneous projects.

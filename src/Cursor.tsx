@@ -17,6 +17,7 @@ function CursorComp() {
                 presenceURL="https://prsc.yomo.dev"
                 presenceAuthEndpoint="/api/auth"
                 avatar="https://cursor-chat-example.vercel.app/_next/image?url=%2Flogo.png&w=256&q=75"
+                room="chat-example1"
             />
         </div>
     </>
