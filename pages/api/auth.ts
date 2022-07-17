@@ -1,4 +1,4 @@
-export default async function handler(req, res) {
+export default async function handler(req:any, res:any) {
     if (req.method === 'GET') {
         try {
             const response = await fetch('https://prsc.yomo.dev/api/v1/auth', {
@@ -7,10 +7,10 @@ export default async function handler(req, res) {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
-                    // app_id: process.env.APP_ID,
-                    // app_secret: process.env.APP_SECRET,
-                    app_id: 'FisTqBFptOWePVM',
-                    app_secret: 'vrJhIjQZLLRnufzVIbxjMIMvosaoJa'
+                    app_id: process.env.APP_ID,
+                    app_secret: process.env.APP_SECRET,
+                    // app_id: 'FisTqBFptOWePVM',
+                    // app_secret: 'vrJhIjQZLLRnufzVIbxjMIMvosaoJa'
                 }),
             });
             const data = await response.json();
